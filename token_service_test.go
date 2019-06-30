@@ -4,13 +4,13 @@ import (
 	"strings"
 	"testing"
 
-	pb "github.com/EwanValentine/shippy-user-service/proto/auth"
+	pb "github.com/oceandemy/shippy/shippy-user-service/proto/auth"
 )
 
 var (
 	user = &pb.User{
 		Id:    "abc123",
-		Email: "ewan.valentine89@gmail.com",
+		Email: "johansirius@gmail.com",
 	}
 )
 
@@ -69,7 +69,7 @@ func TestCanDecodeToken(t *testing.T) {
 	if claims.User == nil {
 		t.Fail()
 	}
-	if claims.User.Email != "ewan.valentine89@gmail.com" {
+	if claims.User.Email != "johansirius@gmail.com" {
 		t.Fail()
 	}
 }

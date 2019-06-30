@@ -3,10 +3,10 @@ package main
 import (
 	"log"
 
-	pb "github.com/EwanValentine/shippy-user-service/proto/auth"
 	"github.com/micro/go-micro"
-	_ "github.com/micro/go-plugins/registry/mdns"
+	_ "github.com/micro/go-micro/registry/mdns"
 	k8s "github.com/micro/kubernetes/go/micro"
+	pb "github.com/oceandemy/shippy/shippy-user-service/proto/auth"
 )
 
 func main() {
